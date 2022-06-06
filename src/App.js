@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+
 import './App.css';
+import ItemCount from './components/ItemCount';
+
+
+import NavBar from './components/NavBar';
 
 function App() {
+  
+  const onAdd =(count) =>{
+    alert( `Sumaste ${count} productos `);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <h1>Bienvenido a mi ecommerce</h1>
+      <ItemCount min={1} max={10} onAdd={onAdd} />
+    </>
   );
 }
 
