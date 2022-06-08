@@ -1,20 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-const ItemListContainer = ({greeting}) => {
-    const [personajes, setPersonajes] = useState([])
-
-    useEffect(() => {
-      first
-    
-      return () => {
-        second
-      }
-    }, [third])
-    
-
-
+function ItemListContainer({bienvenida}) {
   return (
-    <div>{greeting}</div>
+    <div>{bienvenida}</div>
   )
 }
 
