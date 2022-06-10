@@ -1,22 +1,25 @@
 import React from 'react';
 
 import './App.css';
-import ItemCount from './components/ItemCount';
+import ItemListContainer from './components/ItemListContainer';
 
+//import ItemCount from './components/ItemCount';
+/*import { BrowserRouter, Routes, Route } from "react-router-dom";*/
 
 import NavBar from './components/NavBar';
 
 function App() {
-  
+  /*  BORRADO PERTENECE AL ItemCount y Import ItemCount
   const onAdd =(count) =>{
     alert( `Sumaste ${count} productos `);
-  }
+  }*/
 
   return (
     <>
       <NavBar />
-      <h1>Bienvenido a mi ecommerce</h1>
-      <ItemCount min={1} max={10} onAdd={onAdd} />
+      
+      <ItemListContainer  bienvenida="Bienvenida a mi pagina con REACT" />
+      {/*<ItemCount min={1} max={10} onAdd={onAdd} /> */}
     </>
   );
 }
